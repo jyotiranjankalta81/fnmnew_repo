@@ -75,6 +75,7 @@ form.sign-in-form {
   border-radius: 55px;
   display: grid;
   grid-template-columns: 15% 85%;
+  align-items: center;
   padding: 0 0.4rem;
   position: relative;
 }
@@ -82,7 +83,7 @@ form.sign-in-form {
 .input_field_icon {
   text-align: center;
   line-height: 55px;
-  color: #acacac;
+  /* color: #acacac; */
   transition: 0.5s;
   font-size: 1.1rem;
 }
@@ -120,8 +121,8 @@ form.sign-in-form {
   align-items: center;
   margin: 0 0.45rem;
   color: #333;
-  border-radius: 50%;
-  border: 1px solid #333;
+  border-radius: 10%;
+  border: 1px solid rgb(170, 168, 168);
   text-decoration: none;
   font-size: 1.1rem;
   transition: 0.3s;

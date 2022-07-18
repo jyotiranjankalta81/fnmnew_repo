@@ -1,10 +1,7 @@
 import React,{useState} from 'react'
 import "./SignupLogin.css"
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GoogleIcon from '@mui/icons-material/Google';
 import PersonIcon from '@mui/icons-material/Person';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 import LockIcon from '@mui/icons-material/Lock';
 
 export const SignupLogin = () => {
@@ -28,16 +25,17 @@ export const SignupLogin = () => {
             <p className="social-text">Or Sign in with social platforms</p>
             <div className="social-media">
               <a href="/" className="social-icon">
-                <FacebookIcon/>
+                <img src={process.env.PUBLIC_URL + "./Employer/facebook.png"} alt="_" />
+
               </a>
               <a href="/" className="social-icon">
-                <TwitterIcon/>
+                <img src={process.env.PUBLIC_URL + "./Employer/twitter.png"} alt="_" />
               </a>
               <a href="/" className="social-icon">
-                <GoogleIcon/>
+                <img src={process.env.PUBLIC_URL + "./Employer/google.png"} alt="_" />
               </a>
               <a href="/" className="social-icon">
-                <LinkedInIcon/>
+                <img src={process.env.PUBLIC_URL + "./Employer/linkedin.png"} alt="_" />
               </a>
             </div>
           </form>
@@ -48,7 +46,7 @@ export const SignupLogin = () => {
               <input type="text" placeholder="Username" />
             </div>
             <div className="input-field">
-              <i className="fas fa-envelope"></i>
+              <EmailIcon className='input-field_icon' />
               <input type="email" placeholder="Email" />
             </div>
             <div className="input-field">
@@ -64,16 +62,15 @@ export const SignupLogin = () => {
             <div className="social-media">
               <a href="/" className="social-icon">
               <img src={process.env.PUBLIC_URL + "./Employer/facebook.png"} alt="_" />
-                {/* <FacebookIcon/> */}
               </a>
               <a href="/" className="social-icon">
-                <TwitterIcon/>
+              <img src={process.env.PUBLIC_URL + "./Employer/twitter.png"} alt="_" />
               </a>
               <a href="/" className="social-icon">
-                <GoogleIcon/>
+              <img src={process.env.PUBLIC_URL + "./Employer/google.png"} alt="_" />
               </a>
               <a href="/" className="social-icon">
-                <LinkedInIcon/>
+              <img src={process.env.PUBLIC_URL + "./Employer/linkedin.png"} alt="_" />
               </a>
             </div>
           </form>
@@ -83,9 +80,9 @@ export const SignupLogin = () => {
       <div className="panels-container">
         <div className="panel left-panel">
           <div className="content">
-            <h3>New here ?</h3>
+            <h3>Create an account FindMyNext</h3>
             <p>
-              Sign in to create your Career Path!
+              Sign Up to create your Career Path!
             </p>
             <button className="btn transparent" id="sign-up-btn" onClick={() => setaddclass("sign-up-mode")}>
               Sign up
